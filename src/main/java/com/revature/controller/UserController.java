@@ -1,7 +1,6 @@
 package com.revature.controller;
 
 import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -25,9 +24,10 @@ public class UserController {
 	
 	@Autowired
 	private HttpServletRequest request; // This will be a bean that is "request" scoped
-	@Autowired
-	private HttpServletResponse response; // This will be a bean that is "request" scoped
-	
+	/*
+	 * @Autowired private HttpServletResponse response; // This will be a bean that
+	 * is "request" scoped
+	 */
 	@PostMapping(path = "login")
 	public ResponseEntity<Void> login(@RequestBody @Valid LoginTemplate loginTemplate) {
 		

@@ -1,8 +1,5 @@
 package com.revature.controller;
 
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
@@ -26,10 +23,11 @@ public class ShipController {
 	@Autowired
 	private ShipService shipService;
 	
-	@Autowired
-	private HttpServletRequest request;
-	@Autowired
-	private HttpServletResponse response;
+	/*
+	 * @Autowired private HttpServletRequest request;
+	 * 
+	 * @Autowired private HttpServletResponse response;
+	 */
 		
 	@GetMapping(path = "ship/{id}")
 	@LoggedInOnly

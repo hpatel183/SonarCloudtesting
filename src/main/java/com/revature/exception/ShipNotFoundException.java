@@ -1,5 +1,6 @@
 package com.revature.exception;
 
+@SuppressWarnings("serial")
 public class ShipNotFoundException extends Exception {
 
 	public ShipNotFoundException() {
